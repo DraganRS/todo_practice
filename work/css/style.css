@@ -1,0 +1,141 @@
+.navigation {
+    position: relative;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+    display: flex;
+}
+
+.nav-link.icon {
+    position: absolute;
+    right: 0;
+    display: none;
+}
+
+.welcome {
+    font-size: 20px;
+    font-weight: 500;
+    margin-top: 20px;
+}
+
+.heading{
+    width: 50%;
+    margin: 30px auto;
+    text-align: center;
+    color: #565656;
+    background: #e1e0de;
+    border: 2px solid #565656;
+    border-radius: 5px;
+}
+
+.todo_form {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 50%;
+    margin: 0 auto;
+    border-radius: 5px;
+    padding: 10px;
+    background: #e1e0de;
+    border: 1px solid #565656;
+}
+
+.todo_form p {
+    color: red;
+    margin: 0px;
+}
+
+.todo_input {
+    width: 73%;
+    height: 15px;
+    padding: 10px;
+    border: 2px solid #565656;
+}
+
+.todo_btn {
+    margin-top: 10px;
+    height: 39px;
+    background: #e1e0de;
+    color: #565656;
+    border: 2px solid #565656;
+    border-radius: 5px;
+    padding: 5px 20px;
+}
+
+table {
+    width: 50%;
+    margin: 0 auto;
+    border-collapse: collapse;
+}
+
+tr {
+    border-bottom: 1px solid #cbcbcb;
+}
+th {
+    font-size: 19px;
+    color: #565656;
+}
+th, td {
+    border: none;
+    height: 30px;
+    padding: 2px;
+}
+
+tr:hover {
+    background: #E9E9E9;
+}
+.task {
+    text-align: left;
+}
+
+.delete {
+    text-align: center;
+}
+
+.delete a, .edit a {
+    color: white;
+    background: #e1e0de;
+    padding: 1px 6px;
+    border-radius: 3px;
+    text-decoration: none;
+}
+
+.delete a:hover {
+    color: red;
+    text-decoration: none;
+}
+
+.edit a:hover {
+    color: green;
+    text-decoration: none;
+}
+
+  
+@media screen and (max-width: 600px) {
+
+.navigation {
+    padding: .5rem 1rem;
+}
+.navigation a {
+    display: none;
+}
+.navigation a.icon {
+    display: block !important;
+}
+.navigation.responsive {
+    flex-direction: column;
+    align-items: flex-start;
+}
+.navigation.responsive a {
+    display: flex;
+}
+
+.heading {
+    width: 75%;
+}
+.todo_form {
+    width: 75%;
+}
+
+
+}
